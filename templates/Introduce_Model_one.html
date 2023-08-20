@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本摘要事实一致性检查模型演示系统</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../static/css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" href="../../static/css/fullcalendar.css" />
+    <link rel="stylesheet" href="../../static/css/matrix-style.css" />
+    <link rel="stylesheet" href="../../static/css/matrix-media.css" />
+    <link rel="stylesheet" href="../../static/font-awesome/css/font-awesome.css"  />
+    <link rel="stylesheet" href="../../static/css/jquery.gritter.css" />
+    <link rel='stylesheet' href='../../static/css/font.css' />
+
+</head>
+<body>
+    <div id="header">
+      <h3 style="margin:15px auto auto 10px;">Demonstration system for fact-checking models for text summaries</h3>
+    </div>
+
+    <!--左边侧边栏-->
+    <div id="sidebar"><i class="icon icon-home"></i> Project Catalog</a>
+      <ul>
+        <li class="submenu active"> <a href="/Index"><i class="icon icon-time"></i> <span>Introduction</span>
+            <ul>
+              <li><a href="/Model_introduce_one">Introduction to the FACTCC</a></li>
+              <li><a href="/Model_introduce_two">Introduction to the FEQA</a></li>
+        </ul>
+         </a>
+        </li>
+        <li> <a href="/Model_show_one"><i class="icon icon-th-list"></i> <span>Model 1 Demo</span></a></li>
+          <li> <a href="/Model_show_two"><i class="icon icon-th-list"></i> <span>Model 2 Demo</span></a></li>
+      </ul>
+    </div>
+    <!--sidebar-menu-->
+
+
+<div id="content">
+  <div id="content-header">
+    <div id="breadcrumb"> <a href="/Index" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 项目介绍</a></div>
+  </div>
+    <div class="container-fluid">
+        <div class="widget-box">
+              <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
+                <h5 id="leave_sid">Model 1</h5>
+              </div>
+              <div class="widget-content nopadding">
+
+<!--                  这里写介绍，放图和文字-->
+                  <font size="4">
+                 <p>Considering that significant improvements in natural language understanding (NLU) tasks (including NLI) come from using pre-trained Transformer-based models, we decided to use BERT as the base model for our work.</p>
+                 <p> A base-less basic (110M parameter) BERT architecture was used as a starting checkpoint and fine-tuned based on the generated training data.</p>
+                 <p> Source documents and declarative statements are used as inputs to the model, and bi-directional classification (consistent\inconsistent) is performed using a single-layer classifier based on [CLS] markup.</p>
+                  <p>    We refer to this model as the Fact Consistency Checking Model (FactCC).</p>
+                  </font>
+                  <img src="../static/img/factccPic.png" alt="factcc" width="400" height="500">
+              </div>
+        </div>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="../../static/js/excanvas.min.js"></script>
+    <script type="text/javascript" src="../../static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../static/js/jquery.ui.custom.js"></script>
+    <script type="text/javascript" src="../../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../static/js/jquery.flot.min.js"></script>
+    <script type="text/javascript" src="../../static/js/jquery.flot.resize.min.js"></script>
+    <script type="text/javascript" src="../../static/js/jquery.peity.min.js"></script>
+    <script type="text/javascript" src="../../static/js/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="../../static/js/matrix.js"></script>
+    <script type="text/javascript" src="../../static/js/matrix.dashboard.js"></script>
+    <script type="text/javascript" src="../../static/js/jquery.gritter.min.js"></script>
+    <script type="text/javascript" src="../../static/js/matrix.interface.js"></script>
+    <script type="text/javascript" src="../../static/js/matrix.chat.js"></script>
+    <script type="text/javascript" src="../../static/js/jquery.validate.js"></script>
+    <script type="text/javascript" src="../../static/js/matrix.form_validation.js"></script>
+    <script type="text/javascript" src="../../static/js/jquery.wizard.js"></script>
+    <script type="text/javascript" src="../../static/js/jquery.uniform.js"></script>
+    <script type="text/javascript" src="../../static/js/select2.min.js"></script>
+    <script type="text/javascript" src="../../static/js/matrix.popover.js"></script>
+    <script type="text/javascript" src="../../static/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../../static/js/matrix.tables.js"></script>
+
+</body>
+</html>
